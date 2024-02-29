@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <title>Broadway Success Predictor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+        .navbar {
+            background-color: #4B0082; /* Indigo background for navbar */
+        }
+        .navbar-brand,
+        .nav-link {
+            color: #fff; /* White text for navbar */
+            font-size: 1.2rem; /* Larger font size for navbar items */
+        }
+        .hero {
+            background: url('images/The-Future-of-Broadway-Trends-and-Predictions-1.jpg') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 150px 0;
+        }
+       .hero h1 {
+            font-size: 4rem; /* Larger font size for hero title */
+            color: #f7f7fc;
+            -webkit-text-stroke: 1px grey; /* Creates a border effect for Webkit browsers */
+            text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000; /* Simulating text stroke for cross-browser compatibility */
+        }
+
+        .hero p {
+            font-size: 1.8rem; /* Larger font size for hero subtitle */
+            color: #f7f7fc;
+            -webkit-text-stroke: 1px grey; /* Creates a border effect for Webkit browsers */
+            text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000; /* Simulating text stroke for cross-browser compatibility */
+        }
+        .features-background,
+        .contact-background,
+        .developer-info-background {
+            background-color: #c9c5eb; /* Neutral grey background for sections */
+            border-radius: 15px;
+            margin-bottom: 40px;
+
+        }
+        p {
+            font-size: 1.2rem; /* Larger font size for hero subtitle */
+        }
+        .img-feature {
+             max-width: 70%; /* Adjusted for better responsiveness */
+            margin: auto; /* Center align images */
+            display: block;
+            border-radius: 15px;
+            margin-bottom: 40px;
+
+        }
+        .model-training-container {
+            display: flex;
+            justify-content: space-evenly; /* Even spacing around items */
+            gap: 20px;
+        }
+        .model-training-img {
+            width: 48%; /* Half width minus gap for side by side */
+        }
+        footer {
+            background-color: #4B0082; /* Indigo background for footer */
+            color: #fff;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Keyword Generator Logo" height="40"
+                                              class="mr-2">Broadway Success Predictor</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto"> <!-- Use ms-auto here to push nav items to the right -->
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#introduction">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#developer-info">Developer Info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="hero d-flex align-items-center">
+    <div class="container text-center">
+        <h1 class="display-4">Broadway Success Predictor</h1>
+        <p class="lead">Utilizing Neural Networks and NLP to forecast Broadway show successes.</p>
+    </div>
+</header>
+<main class="container mt-5">
+    <section id="introduction" class="my-5">
+        <div class="container">
+            <h2 class="text-center">Revolutionizing Broadway Investments</h2>
+            <p class="lead text-center">In an industry where passion meets profitability, the Broadway Success Predictor
+                stands as a beacon of innovation.</p>
+            <p>At the heart of the bustling streets and the bright lights, Broadway has always been a realm of dreams
+                and dramatics. However, behind the curtains, the decision to invest in a show has often felt like a
+                high-stakes gamble, with only a fraction of productions recouping their investment. Enter the Broadway
+                Success Predictor: a groundbreaking application designed to transform uncertainty into calculated
+                confidence.</p>
+            <p>Utilizing the latest advancements in Neural Networks and Natural Language Processing, our app analyzes
+                thousands of data points—from viewer ratings on IMDb to social media buzz and critical reviews. It's not
+                just about numbers; it's about understanding the nuanced language of success in the entertainment
+                industry. By offering a data-driven success prediction, we empower investors, producers, and creatives
+                to make informed decisions, significantly increasing their chances of backing a hit show.</p>
+            <p>Imagine the possibilities when you can foresee the potential success of Broadway shows before the
+                curtains even open. With the Broadway Success Predictor, you're not just investing in shows; you're
+                investing in the future of entertainment. Join us on this exhilarating journey to redefine the landscape
+                of Broadway investments.</p>
+        </div>
+    </section>
+
+
+    <section id="features" class="features-background text-center mt-5 p-3">
+        <h1>Features</h1>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <h3>Data Collection</h3>
+                <p>Gathering diverse and rich datasets from IMDb, social media platforms, and drama review websites, our
+                    app meticulously analyzes viewer ratings, social media mentions, and detailed cast and crew
+                    information to create a comprehensive data foundation for prediction.</p>
+                <img src="images/data_collection.jpg" alt="Data Collection" class="img-fluid img-feature mx-auto">
+
+
+            </div>
+            <div class="col-md-4 mb-3">
+                <h3>Data Pre-processing</h3>
+                <p>Before predictions begin, data is cleaned and preprocessed to ensure quality. Techniques such as
+                    normalization and one-hot encoding of categorical variables are applied to prepare the data for
+                    efficient model training, directly impacting predictive performance.</p>
+                <img src="images/data_processing.jpg" alt="Data Pre-processing" class="img-fluid img-feature mx-auto">
+
+
+            </div>
+            <div class="col-md-4 mb-3">
+                <h3>Model Training</h3>
+                <p>Utilizing advanced algorithms like Linear Regression, Logistic Regression, and SVM, the app trains on
+                    historical data to identify patterns. These patterns are then used to predict the success of new
+                    Broadway shows with a high degree of accuracy.</p>
+                <img src="images/model_training.jpg" alt="Model Training" class="img-fluid img-feature mx-auto">
+                <div class="model-training-container">
+                    <img src="images/model_training1.jpg" alt="Model Training 1"
+                         class="img-fluid img-feature model-training-img">
+                    <img src="images/model_training2.jpg" alt="Model Training 2"
+                         class="img-fluid img-feature model-training-img">
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Developer Information Section -->
+    <section id="developer-info" class="text-center mt-5 p-3 developer-info-background">
+        <h2>Developer Information</h2>
+        <p>Zhenyun Zhou</p>
+        <p>Email: <a href="mailto:zhenyun.zhou1018@gmail.com">zhenyun.zhou1018@gmail.com</a></p>
+    </section>
+
+    <section id="contact" class="mt-5 contact-background p-3">
+        <h2>Contact Us</h2>
+        <p>For further information and access to the app, please reach out to us.</p>
+        <!-- Contact form or contact details here -->
+    </section>
+</main>
+
+
+<footer class="container text-center text-white ">
+    <p>&copy; 2024 Broadway Success Predictor. All rights reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>
